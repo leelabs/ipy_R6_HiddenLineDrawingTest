@@ -13,7 +13,7 @@ objref = clr.Reference[Rhino.DocObjects.ObjRef]()
 object = Rhino.Input.RhinoGet.GetOneObject("Get It!", False, filter, objref)
 
 viewport = Rhino.Display.RhinoViewport()
-
+print "git test"
 options = Rhino.Geometry.HiddenLineDrawingParameters()
 options.SetViewport(viewport)
 options.AddGeometry(objref.Geometry(),"")
